@@ -98,10 +98,8 @@ const Footer = () => {
         <div className="flex justify-end mb-6">
            <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity group">
               {/* US Flag Icon */}
-              <div className="w-5 h-3 bg-[#BF0A30] relative overflow-hidden rounded-[1px]">
-                 <div className="absolute top-0 left-0 w-2.5 h-1.5 bg-[#002868] z-10"></div>
-                 <div className="absolute top-[2px] w-full h-[2px] bg-white opacity-90"></div>
-                 <div className="absolute bottom-[2px] w-full h-[2px] bg-white opacity-90"></div>
+              <div className="flex items-center justify-center hover:opacity-80 transition-opacity">
+                <span className="fi fi-us" style={{ fontSize: '16px', borderRadius: '2px' }}></span>
               </div>
               <span className="text-[14px] font-medium text-white">English</span>
               <ChevronDown className="w-4 h-4 text-gray-400 group-hover:text-white" />

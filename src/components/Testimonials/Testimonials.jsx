@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Twitter, Facebook, Youtube, Instagram } from 'lucide-react';
 
-// --- IMPORT ASSETS ---
 import musicianImg from '../../assets/Testimonials/Section.png'; 
 import twitterCard from '../../assets/Testimonials/div.testimonial-card__quote (2).png'; 
 import instaCard from '../../assets/Testimonials/div.testimonial-card__quote (1).png';   
 import fbCard from '../../assets/Testimonials/div.testimonial-card__quote.png';       
-// Using mainLogo or you can replace with the specific orange logo asset if you have it
 import mainLogo from '../../assets/Vector.png'; 
 
 const Testimonials = () => {

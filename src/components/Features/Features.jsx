@@ -1,10 +1,10 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react'; // Make sure you have lucide-react installed
+import { ArrowRight } from 'lucide-react';
 
 // --- IMPORT ASSETS ---
-import keepCleanImg from '../../assets/Features/pic.png';    // Pink "Keep Mac Clean"
-import writeCodeImg from '../../assets/Features/Link.png';   // Cream "Write code"
-import joinMeetImg from '../../assets/Features/Link (1).png'; // Blue "Join meetings"
+import keepCleanImg from '../../assets/Features/pic.png';    
+import writeCodeImg from '../../assets/Features/Link.png';   
+import joinMeetImg from '../../assets/Features/Link (1).png';
 
 const Features = () => {
   return (
