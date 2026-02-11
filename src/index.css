@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CRITICAL FIX: Sets the "canvas" color to match your app */
+html, body {
+  background-color: #2B2D32; 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overscroll-behavior-y: none; /* Optional: Stops the 'bounce' effect entirely */
+}
+
+#root {
+  background-color: #2B2D32;
+  min-height: 100vh;
+}
