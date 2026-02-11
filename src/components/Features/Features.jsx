@@ -22,7 +22,7 @@ const Features = () => {
           {/* Title */}
           <div className="w-full md:w-[435px]">
             <h2 style={{
-              fontFamily: '"Avenir Next", sans-serif',
+              fontFamily: '"Avenir Next"',
               fontWeight: 600,
               fontSize: '34px',
               lineHeight: '51.84px',
@@ -36,7 +36,7 @@ const Features = () => {
           {/* Description */}
           <div className="w-full md:w-[545px]">
             <p style={{
-              fontFamily: '"Avenir Next", sans-serif',
+              fontFamily: '"Avenir Next"',
               fontWeight: 400,
               fontSize: '18px',
               lineHeight: '32.04px',
@@ -75,7 +75,7 @@ const Features = () => {
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           <a href="#" className="flex items-center gap-3 ml-3 group hover:opacity-80 transition-opacity">
             <span style={{
-               fontFamily: '"Avenir Next", sans-serif',
+               fontFamily: '"Avenir Next"',
                fontWeight: 500,       // Medium
                fontSize: '20px',
                lineHeight: '30px',
@@ -95,7 +95,7 @@ const Features = () => {
           {/* Title: "Your Setapp journey." */}
           <div style={{ width: '365px', maxWidth: '100%' }}>
             <h2 style={{
-              fontFamily: '"Avenir Next", sans-serif',
+              fontFamily: '"Avenir Next"',
               fontWeight: 600,       // Demi Bold
               fontSize: '34px',
               lineHeight: '51.84px',
@@ -109,7 +109,7 @@ const Features = () => {
           {/* Description: "Type in your task..." */}
           <div style={{ width: '458px', maxWidth: '100%' }}>
             <p style={{
-              fontFamily: '"Avenir Next", sans-serif',
+              fontFamily: '"Avenir Next"',
               fontWeight: 400,       // Regular
               fontSize: '18px',
               lineHeight: '32.04px',

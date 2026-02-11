@@ -80,7 +80,7 @@ const Testimonials = () => {
             {/* Description: Exact Size & Font */}
             <div style={{ width: '265px' }}>
                <p style={{
-                 fontFamily: '"Avenir Next", sans-serif',
+                 fontFamily: '"Avenir Next"',
                  fontWeight: 400,
                  fontSize: '18px',
                  lineHeight: '32.04px',
@@ -163,7 +163,7 @@ const Testimonials = () => {
 
             {/* Headline */}
             <h2 style={{
-              fontFamily: '"Avenir Next", sans-serif',
+              fontFamily: '"Avenir Next"',
               fontWeight: 600, // Demi Bold
               fontSize: '46px',
               lineHeight: '59.8px',

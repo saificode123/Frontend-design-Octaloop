@@ -105,7 +105,7 @@ const Hero = () => {
 
             {/* Headline Text */}
             <div className="w-full max-w-[567px] text-center">
-                <h1 className="font-bold text-[40px] leading-[1.1] md:text-[64px] md:leading-[67.84px] tracking-wide text-white font-['Avenir_Next']">
+                <h1 className="font-bold text-[40px] leading-[1.1] md:text-[64px] md:leading-[67.84px] tracking-wide text-white font-['Avenir Next']">
                     Dozens of apps.<br />
                     One subscription.<br />
                     $9.99
