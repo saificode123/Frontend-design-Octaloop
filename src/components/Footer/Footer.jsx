@@ -6,30 +6,21 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#2B2D32] text-white pt-20 pb-10 border-t border-gray-700/30">
       
-      {/* MAIN CONTAINER */}
       <div className="w-full max-w-[1440px] px-4 xl:px-[120px] mx-auto">
         
-        {/* =======================
-            TOP SECTION: GRID LAYOUT
-           ======================= */}
-        {/* Increased gap-12 to gap-32 to create more space between email field and links */}
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-32 mb-24">
           
-          {/* --- LEFT COLUMN: LOGO & NEWSLETTER --- */}
           <div className="w-full lg:max-w-[380px] flex flex-col items-start">
             
-            {/* Logo + Brand Name */}
             <div className="flex items-center gap-3 mb-6">
                <img src={mainLogo} alt="Setapp" className="w-8 h-8 object-contain" />
                <span className="font-['Avenir_Next'] font-bold text-[20px] tracking-widest text-white uppercase">SETAPP</span>
             </div>
 
-            {/* Newsletter Label */}
             <p className="font-['Avenir_Next'] text-[15px] text-white mb-4 font-medium">
               Updates from our team, written with love 🧡
             </p>
 
-            {/* Email Input Field */}
             <div className="relative w-full h-[50px] mb-8">
               <input 
                 type="email" 
@@ -41,7 +32,6 @@ const Footer = () => {
               </button>
             </div>
 
-            {/* DMCA Badge (Connected, No Gap) */}
             <div className="flex items-center opacity-80 hover:opacity-100 transition-opacity cursor-pointer mt-auto">
                <div className="bg-[#555] text-[10px] font-bold px-2 py-[3px] rounded-l-[2px] text-white border border-gray-500 border-r-0">DMCA</div>
                <div className="bg-[#555] text-[10px] font-bold px-2 py-[3px] rounded-r-[2px] text-white border border-gray-500">PROTECTED</div>
@@ -49,10 +39,8 @@ const Footer = () => {
 
           </div>
 
-          {/* --- RIGHT COLUMNS: LINKS (White Text) --- */}
           <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-8">
             
-            {/* Column 1 */}
             <div className="flex flex-col gap-4">
                <FooterLink text="Home" />
                <FooterLink text="How It Works" />
@@ -64,7 +52,6 @@ const Footer = () => {
                <FooterLink text="Download" />
             </div>
 
-            {/* Column 2 */}
             <div className="flex flex-col gap-4">
                <FooterLink text="About" />
                <FooterLink text="Support" />
@@ -78,7 +65,6 @@ const Footer = () => {
                <FooterLink text="Mac Developer Survey 2023" />
             </div>
 
-            {/* Column 3 */}
             <div className="flex flex-col gap-4">
                <FooterLink text="Getting started with Setapp" />
                <FooterLink text="Remote access to other Mac" />
@@ -92,9 +78,6 @@ const Footer = () => {
 
         </div>
 
-        {/* =======================
-            LANGUAGE SELECTOR
-           ======================= */}
         <div className="flex justify-end mb-6">
            <div className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity group">
               {/* US Flag Icon */}
@@ -106,17 +89,10 @@ const Footer = () => {
            </div>
         </div>
 
-        {/* =======================
-            BOTTOM SEPARATOR (White)
-           ======================= */}
         <div className="w-full h-[1px] bg-white opacity-30 mb-8"></div>
 
-        {/* =======================
-            BOTTOM ROW: COPYRIGHT & SOCIAL
-           ======================= */}
         <div className="flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-6">
           
-          {/* Left: Copyright & Legal (White Text) */}
           <div className="flex flex-col gap-4 text-center md:text-left">
              <p className="text-[11px] text-white opacity-90 leading-relaxed max-w-[600px]">
                © 2023 Setapp Limited, 9 Tallow Street, Youghal, Co. Cork, P36YE14, Ireland. Reg. 584165. VAT ID: IE3425001BH
@@ -127,7 +103,6 @@ const Footer = () => {
              </div>
           </div>
 
-          {/* Right: Social Icons (Grey Circle, Dark Icon) */}
           <div className="flex gap-4">
              <SocialIcon icon={<Facebook size={18} fill="currentColor" strokeWidth={0} />} />
              <SocialIcon icon={<Twitter size={18} fill="currentColor" strokeWidth={0} />} />
@@ -141,8 +116,6 @@ const Footer = () => {
     </footer>
   );
 };
-
-// --- HELPER COMPONENTS ---
 
 const FooterLink = ({ text }) => (
   <a href="#" className="text-[14px] text-white hover:text-gray-300 transition-colors font-normal">

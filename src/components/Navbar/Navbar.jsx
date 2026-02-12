@@ -15,23 +15,17 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    // FIX: Removed 'border-b' to remove the line. 
-    // bg-[#2B2D32] matches the rest of the app perfectly.
-    // fixed top-0 z-50 ensures it stays on top while scrolling.
     <nav className="w-full bg-[#2B2D32] fixed top-0 z-50 pt-[10px] pb-[10px]">
         
-      {/* Container: Max width 1440px to match Figma grid, centered */}
       <div className="max-w-[1440px] mx-auto h-[40px] px-6 flex items-center justify-between">
         
-        {/* --- LEFT: LOGO --- */}
         <div className="flex-shrink-0 flex items-center cursor-pointer">
           <img src={logo} alt="Logo" className="h-[24px] w-auto object-contain hover:opacity-80 transition-opacity" />
         </div>
 
-        {/* --- RIGHT CONTAINER --- */}
+
         <div className="hidden md:flex items-center h-full">
           
-          {/* Navigation Links */}
           <ul className="flex items-center gap-x-6 mr-6">
             {NAV_LINKS.map((link) => (
               <li key={link.name}>
@@ -45,23 +39,19 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Vertical Divider */}
           <div className="h-[14px] w-[1px] bg-gray-500 mr-6"></div>
 
-          {/* Actions Group */}
+
           <div className="flex items-center gap-x-5">
             
-            {/* Flag Icon */}
             <button className="flex items-center justify-center hover:opacity-80 transition-opacity">
                <span className="fi fi-us" style={{ fontSize: '16px', borderRadius: '2px' }}></span>
             </button>
 
-            {/* Sign In */}
             <a href="#" className="text-[13px] font-medium text-white hover:text-gray-300 transition-colors whitespace-nowrap">
               Sign In
             </a>
 
-            {/* Try Free Button */}
             <a
               href="#"
               className="flex items-center justify-center border border-gray-500 rounded-[3px] text-white hover:bg-white hover:text-black transition-all duration-300"
@@ -78,7 +68,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* --- MOBILE TOGGLE --- */}
         <div className="flex md:hidden items-center">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -89,7 +78,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* --- MOBILE DROPDOWN --- */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute left-0 w-full bg-[#2B2D32] shadow-xl" style={{ top: '60px' }}>
           <div className="px-4 py-3 space-y-2">
