@@ -19,7 +19,7 @@ import codeEasier from '../../assets/Hero/code.svg.png';
 const Hero = () => {
   return (
 
-    <section className="relative w-full min-h-screen bg-[#2B2D32] text-white flex justify-center overflow-hidden pt-[80px] md:pt-[120px] pb-24">
+    <section className="relative w-full min-h-screen bg-[#2B2D32] text-white flex justify-center overflow-hidden pt-[250px] md:pt-[120px] pb-0 md:pb-0 mb:pt-10 ">
       
       <div className="relative w-full max-w-[1440px] h-full flex flex-col items-center xl:block">
 
@@ -148,10 +148,9 @@ const Hero = () => {
                 </p>
             </div>
         </div>
+        <div className="w-full h-[1px] bg-[#E5E5E5] opacity-20 mt-20"></div>
       </div>
 
-      {/* Responsive Separator Line */}
-      <div className="absolute bottom-0 w-[90%] xl:w-[1440px] h-[1px] bg-gray-600 opacity-40"></div>
     </section>
   );
 };

@@ -8,13 +8,11 @@ import joinMeetImg from '../../assets/Features/Link (1).png';
 
 const Features = () => {
   return (
-    <section className="w-full bg-[#2B2D32] text-white flex justify-center pb-24">
+    <section className="w-full bg-[#2B2D32] text-white flex justify-center pb-24 md:pt-0">
       
       {/* MAIN CONTAINER: 1440px wide */}
       <div className="w-full max-w-[1440px] flex flex-col px-4 xl:px-0">
         
-        {/* --- TOP BORDER --- */}
-        <div className="w-full h-[1px] bg-[#E5E5E5] opacity-20 mt-0 mb-[60px]"></div>
 
         {/* --- HEADER TEXT ROW --- */}
         <div className="flex flex-col md:flex-row items-start justify-between w-full px-4 md:px-10 xl:px-[120px] mb-16 gap-8">
@@ -72,11 +70,12 @@ const Features = () => {
 
         {/* --- VIEW ALL SUPERPOWERS LINK --- */}
         <div className="flex justify-center mt-12 mb-24">
-              <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-          <a href="#" className="flex items-center gap-3 ml-3 group hover:opacity-80 transition-opacity">
+          <a href="#" className="flex items-center gap-3 group hover:opacity-80 transition-opacity">
+            {/* Arrow is now inside the link for better UX */}
+            <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             <span style={{
                fontFamily: '"Avenir Next"',
-               fontWeight: 500,       // Medium
+               fontWeight: 500,       
                fontSize: '20px',
                lineHeight: '30px',
                letterSpacing: '1.6px',
@@ -92,11 +91,11 @@ const Features = () => {
         {/* --- YOUR SETAPP JOURNEY SECTION --- */}
         <div className="flex flex-col md:flex-row items-start justify-between w-full px-4 md:px-10 xl:px-[120px] gap-8">
           
-          {/* Title: "Your Setapp journey." */}
+          {/* Title */}
           <div style={{ width: '365px', maxWidth: '100%' }}>
             <h2 style={{
               fontFamily: '"Avenir Next"',
-              fontWeight: 600,       // Demi Bold
+              fontWeight: 600,       
               fontSize: '34px',
               lineHeight: '51.84px',
               letterSpacing: '1px',
@@ -106,11 +105,11 @@ const Features = () => {
             </h2>
           </div>
 
-          {/* Description: "Type in your task..." */}
+          {/* Description */}
           <div style={{ width: '458px', maxWidth: '100%' }}>
             <p style={{
               fontFamily: '"Avenir Next"',
-              fontWeight: 400,       // Regular
+              fontWeight: 400,       
               fontSize: '18px',
               lineHeight: '32.04px',
               letterSpacing: '0%',
